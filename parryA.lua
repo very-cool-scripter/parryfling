@@ -1,10 +1,18 @@
---// ⚙️ CUSTOM SETTINGS
 local Settings = getgenv and getgenv().ParrySettings or {}
 
-local FORCE = tonumber(Settings.FORCE) or 300
-local HEIGHT = tonumber(Settings.HEIGHT) or 205
-local COOLDOWN = tonumber(Settings.COOLDOWN) or 2
-local FLASH_TIME = tonumber(Settings.FLASH_TIME) or 0.5
+local FORCE = tonumber(Settings.Force) or 300
+local HEIGHT = tonumber(Settings.Height) or 205
+
+local COOLDOWN = tonumber(Settings.Cooldown) or 2
+local FLASH_TIME = tonumber(Settings.FlashTime) or 0.5
+local FLASH_TRANSPARENCY = tonumber(Settings.FlashTransparency) or 0.5
+
+local SOUND_ID = Settings.Sound1 or "rbxassetid://98660468032974"
+local SOUND2_ID = Settings.Sound2 or "rbxassetid://139557908315922"
+local VOLUME = tonumber(Settings.Volume) or 2
+
+local IMAGE_ID = Settings.Image or "rbxassetid://124367011666371"
+local IMAGE_TIME = tonumber(Settings.ImageTime) or 0.5
 
 --// DEFAULTS
 local FLASH_TRANSPARENCY = 0.5
